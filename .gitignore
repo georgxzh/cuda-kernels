@@ -1,0 +1,19 @@
+# compiled binaries
+*.out
+*.o
+*.obj
+*.exe
+*.exp
+*.lib
+*.pdb
+*.ptx
+*.cubin
+*.fatbin
+
+# python / triton
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# misc
+.DS_Store
