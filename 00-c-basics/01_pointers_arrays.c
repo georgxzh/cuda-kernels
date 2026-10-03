@@ -27,7 +27,7 @@ int main(void) {
     //         between consecutive elements?
 
     for (int i = 0; i < N; i++){
-        printf("arr[%d] = %d, address: %p\n", i, arr[i], &arr[i]);
+        printf("arr[%d] = %d, address: %p\n", i, arr[i], (void*)&arr[i]);
     }
 
     // --- Part B: the same array, accessed through a pointer ---
@@ -69,8 +69,8 @@ int main(void) {
     // TODO 6: print one address from `arr` and one address from `heap_arr`.
     //         Are they in similar ranges or very different ones?
 
-    printf("address of arr[0] = %p\n", &arr[0]);
-    printf("address of heap_arr[0] = %p\n", heap_arr);
+    printf("address of arr[0] = %p\n", (void*)&arr[0]);
+    printf("address of heap_arr[0] = %p\n", (void*)heap_arr);
 
     // TODO 7: free heap_arr. (What would happen if you used it after this?
     //         You don't need to demonstrate that — just know the answer.)

@@ -1,21 +1,18 @@
 # Progress
 
 ## Status
-Phase 0 (C crash course) underway. Step 1 done.
+Phase 0 (C crash course) underway. Step 1 done, Step 2 started.
 
 ## Completed
 - Phase 0 / 00-c-basics — Step 1 (`01_pointers_arrays.c`): stack array,
   pointer arithmetic `*(p + i)`, malloc + NULL check, free. Output correct
   (sums = 285, addresses 4 bytes apart). Stepped through the fill loop in
-  gdb.
+  gdb. Check questions answered correctly; `(void*)` casts added for `%p`.
 
 ## In progress
-- Step 1 loose ends (small, do before Step 2):
-  - Answer the two check questions in own words: (Q1) why consecutive
-    addresses are 4 bytes apart, (Q2) what happens using `heap_arr`
-    after `free`.
-  - Add `(void*)` casts to the three `%p` printf args (TODO 2 asked for
-    it; `-Wpedantic` warns without them).
+- Phase 0 / 00-c-basics — Step 2 (`02_heap_functions.c`): heap arrays
+  passed to functions, memcpy, flat row-major 2D matrix, PASS/FAIL check.
+  Skeleton given, waiting on attempt.
 
 ## Struggled with
 - (nothing notable yet)
